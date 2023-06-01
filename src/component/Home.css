@@ -1,0 +1,19 @@
+.home{
+    height: auto;
+    width: 100%;
+}
+
+.about{
+    position: absolute;
+    bottom: 1rem;
+    
+}
+
+
+
+
+
+.Nav{
+    position: sticky;
+    top: 0%;
+}

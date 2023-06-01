@@ -1,0 +1,66 @@
+.about{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    padding: 2rem 3rem 2rem 3rem;  
+}
+
+
+
+
+h1{
+    font-weight: 900;
+    padding: 5px;
+    text-align: left;
+    top: 2rem;
+    color: #27413c;
+    letter-spacing: 2px;
+
+}
+
+h3{
+    font-weight: 900;
+    padding: 5px;
+    text-align: left;
+    top: 2rem;
+    color: #27413c;
+    letter-spacing: 2px;
+
+}
+
+p{
+    font-weight: 900;
+    padding: 5px;
+    margin: 5px 5px;
+    text-align: left;
+    word-spacing: 10px;
+    line-height: 1.5;
+    color:#1d2524;
+    letter-spacing: 2px;
+}
+
+ol{ 
+    list-style-type: none;
+    padding: 0 0 0 2rem ;
+ 
+}
+
+li{
+    color: #1d2524;
+    font-weight: 300;
+    padding: 0 0 0 1rem ;
+}
+
+ol li p::before{
+    content: "\266A";
+    color:#1d2524;
+    font-weight:bold;
+    font-size: 20px;
+    display: inline-block;
+    width: 10px;
+    
+
+    padding-right: 1rem;
+}
+
+

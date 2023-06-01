@@ -1,0 +1,17 @@
+ .MuiSvgIcon-root{
+    color: #1d2524;
+
+} 
+
+.icons-container{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 1rem 1rem;
+   
+}
+
+.items{
+    margin: 1rem;
+    text-align: center;
+}
+
