@@ -11,12 +11,10 @@ import Nav from './Nav1';
 function Home() {
   return (
     <div className='home'>
-
-
-      
       <Header1/>
       <Nav/>
       <About/>
+    
 
     </div>
       
