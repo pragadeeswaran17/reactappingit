@@ -13,7 +13,8 @@
     --mainColor: black;
     --mainColorLight: white;
     --secondaryColor: #DB2B39;
-    --textColor: #192926;
+    --textColor: #101d1b;
+    --navTextColor : rgb(85, 95, 92);
 
 }
 header{
@@ -31,20 +32,93 @@ header{
 
 
 
-nav a{
+nav .container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
     margin: 0 2rem;
-    color: var(--mainColor);
-    text-decoration: none;
     transition: .05s linear;
     font-size: 1.2rem;
-    border-right: 1px dotted var(--mainColor);
-    padding-right: 50px;
+    letter-spacing: 2px;
+    font-weight: 300;
 
 }
 
-nav a:active{
-    scale: 1.05;
+.home{
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 200;
+    position: relative;
+    
+} 
+
+.resume{
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 200;
+    position: relative;
 }
+
+.contact{
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 200;
+    position: relative;
+}
+
+.home::after{
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -3px;
+    transition: 0.3s;
+} 
+
+.home:hover::after{
+    width: 100%;
+}
+
+.home:active{
+    font-weight: 500;
+    color: var(--mainColorLight);
+}
+
+.resume::after{
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -3px;
+    transition: 0.3s;
+} 
+
+.resume:hover::after{
+    width: 100%;
+}
+
+
+.contact::after{
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -3px;
+    transition: 0.3s;
+} 
+
+.contact:hover::after{
+    width: 100%;
+}
+
+
+
 
 header .nav_btn{
     
@@ -59,7 +133,7 @@ header .nav_btn{
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
     header .nav_btn{
         position: fixed;
         top: 1rem;
@@ -69,22 +143,17 @@ header .nav_btn{
 
     }
 
-
-    
-    
-
     header nav{
         position:fixed;
         top: 1rem;
         left: 1rem;
         right: 1rem;
-        height: 20%;
+        height: 25%;
         width: auto;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
         background-color: var(--mainColor);
         transition: .2s ease-in-out;
         transform: translatey(-50%) scaley(0);
@@ -96,14 +165,83 @@ header .nav_btn{
     
     }
 
-    nav a{
-         font-size: 1.1rem;  
-         letter-spacing: 3px;
+    nav .container{
+        display: flex;
+        flex-direction: column; 
+        text-align: start;
+        row-gap: .75rem;
+        letter-spacing: 3px;
+    } 
+
+ 
+
+    .home{
         color: var(--mainColorLight);
+        text-decoration: none;
+        font-weight: 100;
+        position: relative;
+        
+    } 
+
+    .resume{
+        color: var(--mainColorLight);
+        text-decoration: none;
+        font-weight: 100;
+        position: relative;
     }
 
-    a:hover{
-        scale: 1.05;
+    .contact{
+        color: var(--mainColorLight);
+        text-decoration: none;
+        font-weight: 100;
+        position: relative;
+    }
+
+    .container .home::after{
+        content: "";
+        position: absolute; 
+        background-color: red;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    } 
+
+    .home:hover::after{
+        width: 100%;
+    }
+
+    
+    .container .resume::after{
+        content: "";
+        position: absolute; 
+        background-color: red;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    } 
+
+    .resume:hover::after{
+        width: 100%;
+    }
+
+    
+    .container .contact::after{
+        content: "";
+        position: absolute; 
+        background-color: red;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    } 
+
+    .contact:hover::after{
+        width: 100%;
     }
 
 

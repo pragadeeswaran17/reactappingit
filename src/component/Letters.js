@@ -16,9 +16,9 @@ function TypeLetter() {
             loop
             cursor
             cursorStyle= ""
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
+            typeSpeed={125}
+            deleteSpeed={90}
+            delaySpeed={2000}
             words= {[ " Pragadeeshwaran", " an Engineer", " a Developer", " a Techie, car Lover, music lover and Moon enthusiast" ]}
             />
            </span>

@@ -1,18 +1,12 @@
 import React from 'react';
-import "./Home.css";
+import "./Homepage.css";
 import Header1 from './Header1';
 import About from './About';
-import Nav from './Nav1';
 
-
-
-
-
-function Home() {
+function Homepage() {
   return (
     <div className='home'>
       <Header1/>
-      <Nav/>
       <About/>
     
 
@@ -21,5 +15,5 @@ function Home() {
   )
 }
 
-export default Home;
+export default Homepage;
 
